@@ -672,3 +672,134 @@ footer {
   padding: 15px;
   font-weight: bold;
 }
+
+.announcement-banner:empty {
+  display: none;
+}
+
+.announcement-banner p {
+  margin: 0;
+}
+
+.modal-close-button {
+  position: absolute;
+  right: 12px;
+  top: 8px;
+  background: transparent;
+  color: var(--text-secondary);
+  font-size: 1.5rem;
+  padding: 0 4px;
+}
+
+.announcement-manager {
+  max-width: 620px;
+  max-height: 90vh;
+  overflow-y: auto;
+}
+
+.announcement-manager h3 {
+  color: var(--primary);
+  margin-bottom: 4px;
+}
+
+.modal-intro {
+  color: var(--text-secondary);
+  margin-bottom: 16px;
+}
+
+.form-group textarea,
+.form-group input[type="date"] {
+  width: 100%;
+  border: 1px solid var(--border);
+  border-radius: 4px;
+  padding: 8px;
+  font: inherit;
+}
+
+.form-group textarea:focus,
+.form-group input[type="date"]:focus {
+  outline: 2px solid var(--primary-light);
+  border-color: var(--primary-light);
+}
+
+.form-group label span {
+  color: var(--text-secondary);
+  font-weight: normal;
+}
+
+.announcement-date-fields {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 12px;
+}
+
+.announcement-form-actions {
+  display: flex;
+  gap: 8px;
+  margin-top: 4px;
+}
+
+.secondary-button {
+  background-color: var(--border);
+  color: var(--text-primary);
+}
+
+.announcement-list-heading {
+  align-items: baseline;
+  border-bottom: 1px solid var(--border);
+  display: flex;
+  justify-content: space-between;
+  margin-top: 24px;
+  padding-bottom: 8px;
+}
+
+.announcement-list-heading h4 {
+  color: var(--primary);
+}
+
+#announcement-count,
+.announcement-dates {
+  color: var(--text-secondary);
+  font-size: 0.8rem;
+}
+
+.announcement-management-list {
+  display: grid;
+  gap: 10px;
+  margin-top: 12px;
+}
+
+.announcement-management-item {
+  border: 1px solid var(--border);
+  border-radius: 5px;
+  padding: 12px;
+}
+
+.announcement-management-item p {
+  margin-bottom: 8px;
+}
+
+.announcement-item-actions {
+  display: flex;
+  gap: 8px;
+}
+
+.announcement-item-actions button {
+  font-size: 0.8rem;
+}
+
+.delete-announcement-button {
+  background-color: var(--error);
+}
+
+@media (max-width: 767px) {
+  .announcement-date-fields {
+    grid-template-columns: 1fr;
+    gap: 0;
+  }
+
+  #user-controls {
+    position: static;
+    margin-top: 10px;
+  }
+}
